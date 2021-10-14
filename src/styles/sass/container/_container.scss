@@ -1,0 +1,33 @@
+.app {
+    .container {
+        max-width: 150rem;
+        z-index: 50;
+        @apply md:max-w-5xl lg:max-w-screen-md	 xl:max-w-screen-lg 2xl:max-w-screen-2xl px-8 mx-auto;
+        // @apply max-w-screen-2xl mx-auto;
+        // @include media-min($bp-1000) {
+        //     max-width: 90rem;
+        // }
+        @include media-max($bp-767) {
+            max-width: 70rem;
+        }
+        @include media-max($bp-650) {
+            max-width: 55rem;
+        }
+    }
+    .main {
+        padding-top: var(--header-height);
+        &-wrapper {
+            // padding-top: 15rem;
+        }
+        .welcome-page {
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            display: flex;
+            align-items: center;
+            background-image: url(/images/banner_bg.png);
+            // filter: blur(8px);
+        }
+    }
+}

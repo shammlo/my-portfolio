@@ -1,0 +1,22 @@
+//- tailwind.scss
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+//- main scss files
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './base/base';
+
+// @import '/theme/theme';
+
+@import './base/base';
+@import './base/utilities';
+
+@import './components/navigation';
+
+@import './Layout/header';
+
+@import './container/container';
+@import './components/inputs';
+@import './components/buttons';

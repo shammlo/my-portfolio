@@ -1,0 +1,12 @@
+.navigation {
+    &-item:not(.active) {
+        @apply hover:bg-gray-100 rounded-md cursor-pointer;
+    }
+}
+.app .header .navigation .active {
+    // color: var(--red);
+    border-bottom: 3px var(--red) solid;
+    border-right-color: transparent;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}

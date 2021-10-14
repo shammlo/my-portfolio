@@ -1,0 +1,18 @@
+.header {
+    padding: 1.5rem 3rem;
+    min-height: var(--header-height);
+    font-size: 1.6rem;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.3s;
+
+    @apply text-gray-700;
+}
+.app .header-scroll {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
