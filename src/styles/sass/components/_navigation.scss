@@ -1,12 +1,38 @@
-.navigation {
-    &-item:not(.active) {
-        @apply hover:bg-gray-100 rounded-md cursor-pointer;
+.app .nav {
+    letter-spacing: 0.2px;
+    .navigation {
+        // height: var(--header-height);
+        &-item .navigation-link:not(.active) {
+            transition: all 0.3s;
+            @apply hover:text-[#8d448b] rounded-md cursor-pointer;
+        }
+        &-item {
+            position: relative;
+            transition: all 0.3s ease;
+
+            .navigation-link {
+                @apply py-4 px-6;
+            }
+        }
     }
 }
-.app .header .navigation .active {
-    // color: var(--red);
-    border-bottom: 3px var(--red) solid;
-    border-right-color: transparent;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+.app .header .nav .navigation .navigation-list > .navigation-item > .navigation-link.active {
+    transition: all 0.3s;
+    cursor: pointer;
+    .active-link {
+        transition: all 0.3s;
+
+        position: absolute;
+        cursor: pointer;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: var(--red);
+        // border-bottom: 3px var(--red) solid;
+        // border-right-color: transparent;
+        // border-top-left-radius: 6px;
+        // border-top-right-radius: 6px;
+        // color: var(--red);
+    }
 }

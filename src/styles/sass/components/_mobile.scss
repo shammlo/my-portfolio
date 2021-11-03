@@ -1,0 +1,43 @@
+.app .drawer {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 150;
+    .backdrop {
+        opacity: 0.5;
+    }
+    &-content {
+        position: relative;
+        background-color: var(--bg-main);
+        z-index: 1;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        &-wrapper {
+            padding: 3rem 4rem 3rem 3rem;
+        }
+    }
+    & > * {
+        transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+            opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+            box-shadow 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+            -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    }
+    &-closed {
+        width: 0;
+    }
+    &-open {
+        width: 100%;
+    }
+
+    .navigation {
+        padding: 4rem 0rem;
+
+        .navigation-link {
+            @apply py-4;
+            width: 100%;
+            font-size: 1.8rem;
+        }
+    }
+}

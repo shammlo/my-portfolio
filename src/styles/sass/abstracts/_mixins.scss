@@ -16,12 +16,16 @@ $breakpoints: (
     // 1200px
     $bp-1100: 68.75em,
     // 1100px
+    $bp-1024: 64em,
+    // 1024px
     $bp-1000: 62.5em,
     // 1000px
     $bp-999: 62.4375em,
     // 999px
     $bp-800: 50em,
     // 800px;
+    $bp-780: 48.75em,
+    // 780px;
     $bp-767: 47.9375em,
     // 767px;
     $bp-735: 46em,
@@ -74,6 +78,14 @@ $breakpoints: (
     $size2: map-get($breakpoints, $key2);
 
     @media only screen and (min-width: $size) and (max-width: $size2) {
+        @content;
+    }
+}
+@mixin mqp-2($key, $key2) {
+    $size: map-get($breakpoints, $key);
+    $size2: map-get($breakpoints, $key2);
+
+    @media only screen and (min-width: $key) and (max-width: $key2) {
         @content;
     }
 }

@@ -1,33 +1,56 @@
 .app {
+    // overflow-x: hidden !important;
+
+    color: var(--t-c-primary);
     .container {
         max-width: 150rem;
         z-index: 50;
-        @apply md:max-w-5xl lg:max-w-screen-md	 xl:max-w-screen-lg 2xl:max-w-screen-2xl px-8 mx-auto;
+        color: inherit;
+        @apply md:max-w-7xl lg:px-8 lg:max-w-[940px]	 xl:max-w-screen-lg 2xl:max-w-screen-xl px-12 mx-auto;
         // @apply max-w-screen-2xl mx-auto;
-        // @include media-min($bp-1000) {
+        // @include media-max($bp-999) {
+        //     max-width: 85rem;
+        // }
+        // @include media-max($bp-767) {
         //     max-width: 90rem;
         // }
-        @include media-max($bp-767) {
-            max-width: 70rem;
-        }
-        @include media-max($bp-650) {
-            max-width: 55rem;
+        // @include media-max($bp-650) {
+        //     max-width: 70rem;
+        // }
+
+        @include mqp-2(768px, 1024px) {
+            max-width: 90rem;
         }
     }
     .main {
-        padding-top: var(--header-height);
+        color: inherit;
         &-wrapper {
             // padding-top: 15rem;
         }
-        .welcome-page {
+        .banner {
+            color: inherit;
+            padding-top: calc(var(--header-height) + 15rem);
+            padding-bottom: 3rem;
             min-height: 100vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 50%;
+
+            // min-height: 100vh;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            // background-position: 50%;
             display: flex;
             align-items: center;
-            background-image: url(/images/banner_bg.png);
+            // background-image: url(/images/banner_bg.png);
             // filter: blur(8px);
+        }
+
+        .about-me {
+            padding-top: 10rem;
+            padding-bottom: 11rem;
+        }
+
+        .contact,
+        .footer {
+            background-color: var(--bg-secondary);
         }
     }
 }

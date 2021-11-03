@@ -1,4 +1,152 @@
-// .btn-login {
-//     background-color: rgba(45, 136, 255, 0.2);
-// rgba(45, 136, 255, 0.2);
-// }
+.app {
+    .btn {
+        transition: all 0.3s;
+
+        @apply py-4 px-8 rounded-md cursor-pointer;
+        max-height: 4.2rem;
+        max-width: 17rem;
+
+        &-contact {
+            transition: all 0.3s;
+            //- pink
+            @apply border-solid border-2 text-[#e73434];
+            border-color: #7367f0;
+            color: #7367f0;
+
+            // - red
+            @apply border-[#ff4154] border-solid border-2 text-[#ff4154];
+            @apply hover:bg-[#ff4154] hover:text-white;
+            // - purple
+            @apply border-[#8d448b] border-solid border-2 text-[#8d448b];
+            @apply hover:bg-[#8d448b] hover:text-white;
+
+            // &:hover {
+            //     background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
+            // }
+            max-height: 4.2rem;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        &-contact.active {
+            @apply bg-[#8d448b] text-white;
+            max-height: 4.2rem;
+        }
+        &-download {
+            --background: #275efe;
+            --rectangle: #184fee;
+            --success: #4672f1;
+            --text: #fff;
+            --arrow: #fff;
+            --checkmark: #fff;
+            --shadow: rgba(10, 22, 50, 0.24);
+            --duration: 3000;
+            max-height: 4.2rem;
+            // max-width: 17rem;
+
+            display: flex;
+            overflow: hidden;
+            text-decoration: none;
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+            background: var(--background);
+            background: #df006b;
+            background: #e73434;
+            background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
+            background: #e52165;
+            background: var(--c-main);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px -1px var(--shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            & > div {
+                position: relative;
+                width: 40px;
+                height: 42px;
+                background: var(--rectangle);
+                background: #b90055;
+                background: hsl(0deg, 65%, 47%);
+                background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
+                background: #c91c59;
+                background: var(--c-main-dark);
+
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+
+                // animation: bounce;
+                animation-name: bounce;
+                animation-duration: 0.2s ease;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    border-radius: 1px;
+                    width: 2px;
+                    top: 50%;
+                    left: 50%;
+                    height: 17px;
+                    margin: -9px 0 0 -1px;
+                    background: var(--arrow);
+                }
+
+                & svg {
+                    display: block;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: 50%;
+                    top: 50%;
+                    margin: -9px 0 0 -10px;
+                    fill: none;
+                    z-index: 1;
+                    stroke-width: 2px;
+                    stroke: var(--arrow);
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                }
+            }
+        }
+        &-live {
+            --background: #275efe;
+            --rectangle: #184fee;
+            --success: #4672f1;
+            --text: #fff;
+            --arrow: #fff;
+            --checkmark: #fff;
+            --shadow: rgba(10, 22, 50, 0.24);
+            --duration: 3000;
+            max-height: 4.2rem;
+            display: flex;
+            overflow: hidden;
+            text-decoration: none;
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+            @apply bg-[#8d448b];
+            border-radius: 8px;
+            box-shadow: 0 2px 8px -1px var(--shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            & > div {
+                position: relative;
+                width: 40px;
+                height: 42px;
+
+                background-color: #7a3b78;
+
+                & > svg {
+                    max-width: 25px;
+                    max-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(5px);
+    }
+}

@@ -1,0 +1,95 @@
+.app .contact {
+    .separator {
+        border-bottom: 1.5px solid var(--c-main);
+    }
+    .contact-form {
+        border-radius: 8px;
+        padding: 5rem;
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .main-form {
+            // .form-input {
+            //     padding: 1rem;
+            //     width: 100%;
+            // }
+
+            .input {
+                // padding: 0.6rem;
+                box-sizing: border-box;
+                // @apply mx-auto;
+                @apply w-1/3;
+                // flex-basis: 33.333333%;
+                color: #b9bbbe;
+                width: 65%;
+                // @media only screen and (max-width: $bp-600) {
+                //     width: 75%;
+                //     padding: 0.4rem;
+                // }
+
+                &:not(:last-child) {
+                    @apply mb-8;
+                }
+
+                &-label {
+                    font-weight: bold;
+                    display: block;
+                    margin-bottom: 0.8rem;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                    letter-spacing: 0.3px;
+                    color: var(--t-c-primary-light);
+                }
+
+                &-element {
+                    outline: none;
+                    // border: 1px solid hsl(210, 3%, 12%);
+                    background-color: #fff;
+                    border-radius: 8px;
+                    border-width: 1px;
+                    border-color: #a9a6bd;
+                    font: inherit;
+                    padding: 1rem 1rem;
+                    display: block;
+                    width: 100%;
+                    box-sizing: border-box;
+                    color: var(--t-c-primary);
+                    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+                    @media only screen and (max-width: $bp-600) {
+                        padding: 0.4rem 1rem;
+                    }
+
+                    &::placeholder {
+                        color: #897bad;
+                    }
+
+                    &:focus {
+                        border-color: #8d448b;
+                        background-color: #fff;
+                        box-shadow: 0 0 3px 3px rgba(137, 123, 173, 0.3);
+                        outline: 0 !important;
+                    }
+                }
+                &-element.valid {
+                    &:focus {
+                        outline: none;
+                        // border: 2px solid var(--green);
+                        box-shadow: 0 0 1px 2px var(--green);
+                    }
+                }
+                &-element.invalid {
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0 0 1px 2px var(--red);
+                    }
+                }
+            }
+        }
+    }
+}
+//********** INPUTS **********/
+
+.card {
+    background-color: var(--c-bg-secondary);
+    border-radius: 6px;
+    padding: 2rem;
+}

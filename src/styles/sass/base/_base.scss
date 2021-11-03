@@ -16,8 +16,9 @@ a {
     text-decoration: none;
 }
 p {
-    font-family: Roboto;
-    // font-weight: 300;
+    font-size: inherit;
+    font-family: inherit;
+    // color: var(--t-c-primary);
 }
 
 h1,
@@ -28,8 +29,8 @@ h5,
 h6 {
     font-family: inherit;
     font-weight: inherit;
-    color: #5e5873;
-    color: var(--f-c-primary);
+    color: #0f2137;
+    // color: var(--f-c-primary);
 }
 html {
     margin: 0;
@@ -63,10 +64,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-size: 1.5rem;
     font-weight: 400;
-    // color: #6e6b7b;
+    color: var(--t-c-primary);
     transition: all 0.3s ease-in-out;
 
-    background-color: var(--theme-ui-colors-background, #fffffd);
+    background-color: var(--bg-main);
 }
 
 body::-webkit-scrollbar {

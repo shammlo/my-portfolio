@@ -7,6 +7,7 @@
 @import './abstracts/variables';
 @import './abstracts/mixins';
 @import './base/base';
+@import './base/typography';
 
 // @import '/theme/theme';
 
@@ -14,9 +15,15 @@
 @import './base/utilities';
 
 @import './components/navigation';
+@import './components/animations';
+@import './components/mobile';
 
 @import './Layout/header';
+@import './Layout/banner';
+@import './Layout/projects';
+@import './Layout/contact';
+@import './Layout/footer';
 
 @import './container/container';
-@import './components/inputs';
+// @import './components/inputs';
 @import './components/buttons';

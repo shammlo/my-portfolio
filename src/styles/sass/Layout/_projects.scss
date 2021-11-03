@@ -1,0 +1,77 @@
+.app .projects {
+    .projects-body {
+        // display: flex;
+        // flex-direction: column;
+        // gap: 5rem;
+
+        .project-code-btn,
+        .project-live-btn {
+            transition: all 0.3s ease;
+            &:hover {
+                border-radius: 8px;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                transform: translateY(-2px);
+            }
+        }
+        .project-image {
+            & > div {
+                display: block !important;
+            }
+        }
+        .project-img {
+            max-width: none;
+            position: relative;
+            mix-blend-mode: darken;
+            display: flex;
+            top: 0;
+        }
+        .project-one {
+            .project-image {
+                margin-right: -23rem;
+
+                @include mqp-2(1280px, 1700px) {
+                    margin-right: -15rem;
+                }
+                @include mqp-2(1100px, 1280px) {
+                    margin-right: -13rem;
+                }
+                @include media-max($bp-1100) {
+                    margin-right: 0;
+                }
+            }
+
+            .project-left {
+                @apply mb-24 lgm:mb-0;
+                @apply text-center lgm:text-left justify-center lgm:justify-start;
+            }
+            .project-right {
+            }
+        }
+        .project-two {
+            .project-image {
+                margin-left: -23rem;
+                @include mqp-2(1300px, 1700px) {
+                    margin-left: -15rem;
+                }
+                @include mqp-2(1100px, 1280px) {
+                    margin-left: -13rem;
+                }
+                @include media-max($bp-1100) {
+                    margin-left: 0;
+                }
+                // @include media-max($bp-1100) {
+                //     margin-right: 0;
+                //     margin-left: 0;
+                // }
+            }
+
+            .project-left {
+                @apply order-2 lgm:order-1;
+            }
+            .project-right {
+                @apply order-1 lgm:order-2 mb-24 lgm:mb-0;
+                @apply text-center lgm:text-left justify-center lgm:justify-start;
+            }
+        }
+    }
+}
