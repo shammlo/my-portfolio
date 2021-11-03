@@ -13,7 +13,7 @@ const AboutMe: React.FC<AboutMeProps> = ({}) => {
         <section className="about-me" id="about-me">
             <Wrapper class="container">
                 <Wrapper class="flex flex-col lgm:flex-row py-[3rem]">
-                    <Wrapper class="about-left order-2 lgm:order-1 flex-1">
+                    <Wrapper class="about-left order-2 lgm:order-1 flex-1" animation="fade-up">
                         <Wrapper
                             class="about-image c-img lgm:ml-[-75px]"
                             // animation="fade-up"
@@ -26,7 +26,7 @@ const AboutMe: React.FC<AboutMeProps> = ({}) => {
                             />
                         </Wrapper>
                     </Wrapper>
-                    <Wrapper class="about-right order-1 lgm:order-2">
+                    <Wrapper class="about-right order-1 lgm:order-2" animation="fade-up">
                         <Wrapper
                             class="about-text max-w-[65rem] lgm:max-w-[50rem] mx-auto lgm:pt-[100px] px-[3rem"
                             // animation="fade-up"
