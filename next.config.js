@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-    distDir: 'build',
+    // distDir: 'build',
     reactStrictMode: true,
 };
 module.exports = {
