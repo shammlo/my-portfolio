@@ -27,7 +27,7 @@ const AboutMe: React.FC<AboutMeProps> = ({}) => {
                     </Wrapper>
                     <Wrapper class="about-right order-1 lgm:order-2" animation="fade-up">
                         <Wrapper
-                            class="about-text max-w-[65rem] lgm:max-w-[50rem] mx-auto lgm:pt-[100px] lgm:px-[3rem]"
+                            class="about-text max-w-[65rem]  lgm:max-w-[50rem] mx-auto lgm:pt-[100px] px-[2rem] pb-9 lgm:pb-0"
                             // animation="fade-up"
                         >
                             <h2 className="about-text-title text-6xl mb-6">About me</h2>
