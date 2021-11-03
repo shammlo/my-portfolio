@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ isMobile, drawerHandler }) => {
     };
     return (
         <header
-            className={`header px-8 py-4 flex items-center ${!scroll ? '' : 'header-scroll'} ${
+            className={`header lgm:px-8 py-6 flex items-center ${!scroll ? '' : 'header-scroll'} ${
                 isMobile ? 'mobile-enabled' : ''
             }`}
         >

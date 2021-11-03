@@ -79,7 +79,7 @@ const Contact: React.FC<ContactProps> = ({}) => {
                                         className="input-element"
                                         type="text"
                                         name="from_name"
-                                        placeholder="From name"
+                                        placeholder="Your name"
                                         value={toSend.from_name}
                                         onChange={handleChange}
                                         autoComplete="off"
@@ -90,7 +90,7 @@ const Contact: React.FC<ContactProps> = ({}) => {
 
                                     <input
                                         className="input-element"
-                                        type="text"
+                                        type="email"
                                         name="reply_to"
                                         placeholder="Your email"
                                         value={toSend.reply_to}

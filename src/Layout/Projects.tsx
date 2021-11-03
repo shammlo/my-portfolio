@@ -22,7 +22,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                 {/* //- Projects Body */}
                 <Wrapper class="projects-body flex flex-col	 gap-[3rem]">
                     {/* //- Projects One */}
-                    <Wrapper class="project-one flex content-start flex-col lgm:flex-row py-[100px]">
+                    <Wrapper class="project-one flex content-start flex-col lgm:flex-row pt-[100px] pb-[50px] lgm:py-[100px]">
                         {/* //- left */}
                         <Wrapper class="project-left flex-1 flex flex-col gap-20">
                             <Wrapper class="lgm:pr-20 pt-12" animation="fade-up">
@@ -205,7 +205,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                             animation="fade-up"
                         >
                             {/* //- Project text */}
-                            <Wrapper class="pl-20 pt-12" animation="fade-up">
+                            <Wrapper class="lgm:pl-20 pt-12" animation="fade-up">
                                 <Wrapper class="">
                                     <h1 className="text-5xl lgm:text-4xl	">Covid-19</h1>
                                     <p className="text-[1.75rem] py-4 lgm:font-light">
