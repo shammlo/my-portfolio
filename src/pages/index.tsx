@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import Contact from '../Layout/Contact';
 import Projects from '../Layout/Projects';
 import Wrapper from '../helpers/Hoc/Wrapper/Wrapper';
-import Image from 'next/Image';
+import Image from 'next/image';
 import { Link } from 'react-scroll';
 
 const AboutMe = dynamic(() => import('../Layout/AboutMe'));
