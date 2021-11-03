@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import Wrapper from '../helpers/Hoc/Wrapper/Wrapper';
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
-import Image from 'next/Image';
+import Image from 'next/image';
 import Modal from '../components/UI/Modal';
 init('user_ZvmIDRZKN0Dpu9EnexPlA');
 //******************************** */

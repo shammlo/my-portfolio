@@ -1,7 +1,7 @@
 //********** IMPORTS ************* */
 import React, { useEffect, useState } from 'react';
 import Wrapper from '../../helpers/Hoc/Wrapper/Wrapper';
-import Image from 'next/Image';
+import Image from 'next/image';
 import Navigation from '../Navigation/Navigation';
 import { Link } from 'react-scroll';
 

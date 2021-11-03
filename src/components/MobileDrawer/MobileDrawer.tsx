@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import Wrapper from '../../helpers/Hoc/Wrapper/Wrapper';
 import Navigation from '../Navigation/Navigation';
 import BackDrop from '../UI/BackDrop';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 //******************************** */
 

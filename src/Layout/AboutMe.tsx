@@ -1,8 +1,7 @@
 //********** IMPORTS ************* */
-import Head from 'next/head';
-import React, { useEffect } from 'react';
+
 import Wrapper from '../helpers/Hoc/Wrapper/Wrapper';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 //******************************** */
 

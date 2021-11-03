@@ -2,7 +2,7 @@
 //********** IMPORTS ************* */
 import React from 'react';
 import Wrapper from '../helpers/Hoc/Wrapper/Wrapper';
-import Image from 'next/Image';
+import Image from 'next/image';
 //******************************** */
 
 interface projectsProps {}
