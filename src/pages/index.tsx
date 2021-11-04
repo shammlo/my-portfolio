@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                                     />
                                 </a>
                                 <a
-                                    className="social-link h-[20px] w-[20px] md:h-[25px] px-4"
+                                    className="social-link h-[20px]  md:h-[25px] px-4"
                                     href="#"
                                     target="_blank"
                                 >
@@ -73,8 +73,6 @@ const Home: NextPage = () => {
                                         className="social-link-icon"
                                         width={25}
                                         height={25}
-                                        objectFit="contain"
-                                        layout="responsive"
                                     />
                                 </a>
                                 <a className="social-link h-[25px]" href="#" target="_blank">

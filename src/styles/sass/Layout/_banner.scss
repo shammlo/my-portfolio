@@ -182,3 +182,33 @@
     background-color: #fff;
     color: inherit;
 }
+.app .c-name {
+    position: relative;
+    transition: all 0.3s;
+
+    &:before {
+        content: '';
+        background-color: #df006b;
+        background-color: #f93838;
+        background-color: #ff4154;
+        width: 0rem;
+        height: 0em;
+        position: absolute;
+        z-index: -1;
+        filter: url(#marker-shape);
+        left: 1rem;
+        top: 0.1em;
+        padding: 0 0.25em;
+        animation: c-highlight 650ms ease-out;
+        animation-iteration-count: 1;
+        animation-delay: 1400ms;
+        animation-fill-mode: forwards;
+    }
+
+    // &:hover {
+    //     color: #fff;
+    //     &:before {
+    //         background-color: #f93838;
+    //     }
+    // }
+}

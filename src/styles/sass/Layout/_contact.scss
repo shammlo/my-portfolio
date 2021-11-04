@@ -54,9 +54,9 @@
                     color: var(--t-c-primary);
                     // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-                    @media only screen and (max-width: $bp-600) {
-                        padding: 0.4rem 1rem;
-                    }
+                    // @media only screen and (max-width: $bp-600) {
+                    //     padding: 0.4rem 1rem;
+                    // }
 
                     &::placeholder {
                         color: #897bad;

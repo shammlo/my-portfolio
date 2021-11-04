@@ -30,8 +30,10 @@ const AboutMe: React.FC<AboutMeProps> = ({}) => {
                             class="about-text max-w-[65rem]  lgm:max-w-[50rem] mx-auto lgm:pt-[100px] px-[2rem] pb-9 lgm:pb-0"
                             // animation="fade-up"
                         >
-                            <h2 className="about-text-title text-6xl mb-6">About me</h2>
-                            <hr className="c-line my-4"></hr>
+                            <h2 className="about-text-title text-6xl mb-6 text-center lgm:text-left">
+                                About me
+                            </h2>
+                            <hr className="c-line my-4 mx-auto"></hr>
                             <p className="text-3xl lgm:text-3xl text-[#3f3a5a] leading-normal overflow-ellipsis">
                                 Hello! My name is Shamlo Ameer, I’m a self taught junior web
                                 developer located in kurdistan, computer science graduate, I’m very

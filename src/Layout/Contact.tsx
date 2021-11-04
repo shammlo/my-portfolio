@@ -58,9 +58,9 @@ const Contact: React.FC<ContactProps> = ({}) => {
                             class="contact-form flex items-center justify-center flex-col mx-auto"
                             id="contact-form"
                         >
-                            <Wrapper class="pb-4">
+                            <Wrapper class="pb-4 text-center lgm:text-left">
                                 <h1 className="text-5xl">Contact me</h1>
-                                <hr className="c-line my-4"></hr>
+                                <hr className="c-line my-4 mx-auto lgm:mx-0"></hr>
                                 <p className="text-[1.6rem]">
                                     I’m interested in freelance opportunities – especially ambitious
                                     or large projects. However, if you have other request or

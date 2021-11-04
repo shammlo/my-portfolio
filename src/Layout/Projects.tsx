@@ -209,9 +209,10 @@ const projects: React.FC<projectsProps> = ({}) => {
                                 <Wrapper class="">
                                     <h1 className="text-5xl lgm:text-4xl	">Covid-19</h1>
                                     <p className="text-[1.75rem] py-4 lgm:font-light">
-                                        A website to track the new pandemic Covid-19 virus, with
-                                        visualization of map, table, chart for global and specific
-                                        counters.
+                                        This web app is recreation of the Covid-19 tracker app, but
+                                        used the Next.js framework with TypeScript for its
+                                        development, showcasing map, table, chart for global and
+                                        specific counters, with 2 themes light - dark.
                                     </p>
                                 </Wrapper>
                                 <Wrapper class="py-8" animation="fade-up">
@@ -266,7 +267,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                             {/* //---------------------------------------- */}
                             {/* //- Project Button */}
                             <Wrapper
-                                class="w-100 flex pl-20 justify-center lgm:justify-start"
+                                class="w-100 flex lgm:pl-20 justify-center lgm:justify-start"
                                 animation="fade-up"
                             >
                                 {/* //---------------------------------------- */}

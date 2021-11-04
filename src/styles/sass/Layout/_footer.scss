@@ -1,5 +1,8 @@
 .app .footer {
     .footer-link {
+        color: var(--c-main);
+        // border-bottom: 1px solid var(--c-main);
+
         &:hover {
             color: var(--c-main);
             border-bottom: 1px solid var(--c-main);
