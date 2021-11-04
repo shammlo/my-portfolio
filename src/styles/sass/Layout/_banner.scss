@@ -165,7 +165,7 @@
             align-items: center;
             gap: 2rem;
 
-            @include mq($bp-1024) {
+            @include mq($bp-1025) {
                 justify-content: center;
             }
             .social-link {

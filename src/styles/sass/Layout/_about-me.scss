@@ -1,0 +1,23 @@
+.app .about-me {
+    .about-text .about-text-title span {
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url(/images/dots-bg.svg);
+            fill: black;
+            display: block;
+            left: -15px;
+            top: -15px;
+            position: absolute;
+            height: 3.8rem;
+            width: 3.8rem;
+
+            @include media-max($bp-1025) {
+                left: -18px;
+                height: 4.3rem;
+                width: 4.3rem;
+            }
+        }
+    }
+}

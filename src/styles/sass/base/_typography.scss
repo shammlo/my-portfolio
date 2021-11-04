@@ -80,24 +80,6 @@
 
     // ------------------------------------------------
     // * About
-
-    .about-me {
-        .about-text .about-text-title {
-            position: relative;
-
-            &::before {
-                content: '';
-                background-image: url(/images/dots-bg.svg);
-                fill: black;
-                display: block;
-                left: -15px;
-                top: -15px;
-                position: absolute;
-                height: 3.8rem;
-                width: 3.8rem;
-            }
-        }
-    }
 }
 //************************************
 

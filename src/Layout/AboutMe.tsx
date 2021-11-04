@@ -31,7 +31,7 @@ const AboutMe: React.FC<AboutMeProps> = ({}) => {
                             // animation="fade-up"
                         >
                             <h2 className="about-text-title text-6xl mb-6 text-center lgm:text-left">
-                                About me
+                                <span className="relative">About me</span>
                             </h2>
                             <hr className="c-line my-4 mx-auto"></hr>
                             <p className="text-3xl lgm:text-3xl text-[#3f3a5a] leading-normal overflow-ellipsis">
