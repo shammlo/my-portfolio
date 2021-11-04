@@ -19,11 +19,7 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ mobileDrawer, drawerHandler
             <BackDrop show={mobileDrawer} clicked={drawerHandler} />
             <Wrapper
                 class="drawer-content h-100"
-                style={
-                    mobileDrawer
-                        ? { width: '35rem' }
-                        : { width: '35rem', transform: 'translateX(-150%)' }
-                }
+                style={mobileDrawer ? {} : { transform: 'translateX(-150%)' }}
             >
                 <Wrapper class="drawer-content-wrapper flex flex-col h-100">
                     <Wrapper class="flex justify-between items-center">

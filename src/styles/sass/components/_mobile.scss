@@ -14,8 +14,17 @@
         z-index: 1;
         height: 100%;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        width: 35rem;
+
+        @include media-max($bp-450) {
+            width: 30rem;
+        }
         &-wrapper {
-            padding: 3rem 4rem 3rem 3rem;
+            padding: 3rem 3rem 4rem 3rem;
+            @include media-max($bp-450) {
+                padding: 3rem 3rem 4rem 3rem;
+            }
         }
     }
     & > * {
