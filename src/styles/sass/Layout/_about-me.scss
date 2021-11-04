@@ -18,6 +18,11 @@
                 height: 4.3rem;
                 width: 4.3rem;
             }
+            @include media-max-nob(56.25em) {
+                left: -22px;
+                height: 5.3rem;
+                width: 5.3rem;
+            }
         }
     }
 }

@@ -66,6 +66,13 @@ $breakpoints: (
         @content;
     }
 }
+@mixin media-max-nob($key) {
+    $size: map-get($breakpoints, $key);
+
+    @media only screen and (max-width: $key) {
+        @content;
+    }
+}
 @mixin media-min($key) {
     $size: map-get($breakpoints, $key);
 
