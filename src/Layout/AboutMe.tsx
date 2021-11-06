@@ -33,7 +33,7 @@ const AboutMe: React.FC<AboutMeProps> = ({}) => {
                             <h2 className="about-text-title text-6xl mb-6 text-center lgm:text-left">
                                 <span className="relative">About me</span>
                             </h2>
-                            <hr className="c-line my-4 mx-auto"></hr>
+                            <hr className="c-line my-4 mx-auto lgm:mx-0"></hr>
                             <p className="text-3xl lgm:text-3xl text-[#3f3a5a] leading-normal overflow-ellipsis">
                                 Hello! My name is Shamlo Ameer, I’m a self taught junior web
                                 developer located in kurdistan, computer science graduate, I’m very
