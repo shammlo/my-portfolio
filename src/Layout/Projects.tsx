@@ -40,55 +40,104 @@ const projects: React.FC<projectsProps> = ({}) => {
                                 <Wrapper class="py-8" id="animate-anchor" animation="fade-up">
                                     <h2 className="text-4xl lgm:text-3xl">Techs and tools used</h2>
                                     <Wrapper class="flex items-center justify-center lgm:justify-start pt-8">
-                                        <img
-                                            className="h-16 w-16 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
-                                            alt="html5"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
-                                            alt="sass"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
-                                            alt="javascript"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://datatables.net/media/images/logo.png"
-                                            alt="DataTables"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://www.chartjs.org/media/logo-title.svg"
-                                            alt="chartjs"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://select2.org/user/pages/images/logo.png"
-                                            alt="Select2"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/webpack/webpack.png"
-                                            alt="Webpack"
-                                            width={30}
-                                            height={30}
-                                        />
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                                                alt="html5"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://sass-lang.com/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
+                                                alt="sass"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://www.javascript.com/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                                                alt="javascript"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://datatables.net/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://datatables.net/media/images/logo.png"
+                                                alt="DataTables"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://www.chartjs.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://www.chartjs.org/media/logo-title.svg"
+                                                alt="chartjs"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://select2.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://select2.org/user/pages/images/logo.png"
+                                                alt="Select2"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://webpack.js.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/webpack/webpack.png"
+                                                alt="Webpack"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
                                     </Wrapper>
                                 </Wrapper>
                             </Wrapper>
@@ -232,55 +281,107 @@ const projects: React.FC<projectsProps> = ({}) => {
                                 <Wrapper class="py-8" animation="fade-up">
                                     <h2 className="text-4xl lgm:text-3xl">Techs and tools used</h2>
                                     <Wrapper class="flex items-center justify-center lgm:justify-start pt-8 ">
-                                        <img
-                                            className="h-16 w-16 mr-4 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
-                                            alt="sass"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://camo.githubusercontent.com/92ec9eb7eeab7db4f5919e3205918918c42e6772562afb4112a2909c1aaaa875/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313630373535343338352f7265706f7369746f726965732f6e6578742d6a732f6e6578742d6c6f676f2e706e67"
-                                            alt="Next.js"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-                                            alt="TypeScript"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
-                                            alt="Redux"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-[3.8rem] w-20 mx-4 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/redux-saga/redux-saga/master/logo/0800/Redux-Saga-Logo.png"
-                                            alt="Redux Saga"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://www.chartjs.org/media/logo-title.svg"
-                                            alt="chartjs"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4 cursor-pointer"
-                                            src="https://raw.githubusercontent.com/mbrn/material-table.com/master/docs/assets/logo-back.png"
-                                            alt="Material Table"
-                                            width={35}
-                                            height={30}
-                                        />
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://sass-lang.com/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
+                                                alt="sass"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mx-4 "
+                                            href="https://nextjs.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="w-100 h-100"
+                                                src="https://camo.githubusercontent.com/92ec9eb7eeab7db4f5919e3205918918c42e6772562afb4112a2909c1aaaa875/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313630373535343338352f7265706f7369746f726965732f6e6578742d6a732f6e6578742d6c6f676f2e706e67"
+                                                alt="Next.js"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mx-4 "
+                                            href="https://www.typescriptlang.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
+                                                alt="TypeScript"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+
+                                        <a
+                                            className="h-16 w-16 mx-4 "
+                                            href="https://redux.js.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                                                alt="Redux"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+
+                                        <a
+                                            className="h-[3.8rem] w-20 mx-4 "
+                                            href="https://redux-saga.js.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/redux-saga/redux-saga/master/logo/0800/Redux-Saga-Logo.png"
+                                                alt="Redux Saga"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+
+                                        <a
+                                            className="h-16 w-16 mx-4 "
+                                            href="https://www.chartjs.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://www.chartjs.org/media/logo-title.svg"
+                                                alt="chartjs"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mx-4 "
+                                            href="https://material-table.com/#/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/mbrn/material-table.com/master/docs/assets/logo-back.png"
+                                                alt="Material Table"
+                                                width={35}
+                                                height={30}
+                                            />
+                                        </a>
                                     </Wrapper>
                                 </Wrapper>
                             </Wrapper>
