@@ -96,20 +96,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                                                 height={30}
                                             />
                                         </a>
-                                        <a
-                                            className="h-16 w-16 mr-4"
-                                            href="https://www.chartjs.org/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            <img
-                                                className="h-100 w-100"
-                                                src="https://www.chartjs.org/media/logo-title.svg"
-                                                alt="chartjs"
-                                                width={30}
-                                                height={30}
-                                            />
-                                        </a>
+
                                         <a
                                             className="h-16 w-16 mr-4"
                                             href="https://select2.org/"
@@ -120,6 +107,20 @@ const projects: React.FC<projectsProps> = ({}) => {
                                                 className="h-100 w-100"
                                                 src="https://select2.org/user/pages/images/logo.png"
                                                 alt="Select2"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://www.chartjs.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://www.chartjs.org/media/logo-title.svg"
+                                                alt="chartjs"
                                                 width={30}
                                                 height={30}
                                             />
