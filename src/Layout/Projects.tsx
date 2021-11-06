@@ -41,35 +41,49 @@ const projects: React.FC<projectsProps> = ({}) => {
                                     <h2 className="text-4xl lgm:text-3xl">Techs and tools used</h2>
                                     <Wrapper class="flex items-center justify-center lgm:justify-start pt-8">
                                         <img
-                                            className="h-16 w-16"
+                                            className="h-16 w-16 cursor-pointer"
                                             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
                                             alt="html5"
                                             width={30}
                                             height={30}
                                         />
                                         <img
-                                            className="h-16 w-16 mx-4"
+                                            className="h-16 w-16 mx-4 cursor-pointer"
                                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
                                             alt="sass"
                                             width={30}
                                             height={30}
                                         />
                                         <img
-                                            className="h-16 w-16 mx-4"
+                                            className="h-16 w-16 mx-4 cursor-pointer"
                                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                                             alt="javascript"
                                             width={30}
                                             height={30}
                                         />
                                         <img
-                                            className="h-16 w-16 mx-4"
+                                            className="h-16 w-16 mx-4 cursor-pointer"
+                                            src="https://datatables.net/media/images/logo.png"
+                                            alt="DataTables"
+                                            width={30}
+                                            height={30}
+                                        />
+                                        <img
+                                            className="h-16 w-16 mx-4 cursor-pointer"
                                             src="https://www.chartjs.org/media/logo-title.svg"
                                             alt="chartjs"
                                             width={30}
                                             height={30}
                                         />
                                         <img
-                                            className="h-16 w-16"
+                                            className="h-16 w-16 mx-4 cursor-pointer"
+                                            src="https://select2.org/user/pages/images/logo.png"
+                                            alt="Select2"
+                                            width={30}
+                                            height={30}
+                                        />
+                                        <img
+                                            className="h-16 w-16 cursor-pointer"
                                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/webpack/webpack.png"
                                             alt="Webpack"
                                             width={30}
@@ -96,7 +110,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                                         rel="noreferrer"
                                     >
                                         <p className="py-4 px-10 text-[#ffffff]">Source Code</p>
-                                        <div className="flex items-center justify-center text-white bg-[#7a3b78] h-[42px] w-[40px]">
+                                        <div className="flex items-center justify-center text-white  h-[42px] w-[40px]">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 role="img"
@@ -126,7 +140,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                                         rel="noreferrer"
                                     >
                                         <p className="py-4 px-10 text-[#ffffff]">Live Preview</p>
-                                        <div className="flex items-center justify-center text-white bg-[#7a3b78] h-[42px] w-[40px]">
+                                        <div className="flex items-center justify-center text-white  h-[42px] w-[40px]">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 role="img"
@@ -219,45 +233,52 @@ const projects: React.FC<projectsProps> = ({}) => {
                                     <h2 className="text-4xl lgm:text-3xl">Techs and tools used</h2>
                                     <Wrapper class="flex items-center justify-center lgm:justify-start pt-8 ">
                                         <img
-                                            className="h-16 w-16 mr-4"
+                                            className="h-16 w-16 mr-4 cursor-pointer"
                                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
                                             alt="sass"
                                             width={30}
                                             height={30}
                                         />
                                         <img
-                                            className="h-16 w-16 mx-4"
-                                            src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-                                            alt="Tailwind"
-                                            width={30}
-                                            height={30}
-                                        />
-                                        <img
-                                            className="h-16 w-16 mx-4"
+                                            className="h-16 w-16 mx-4 cursor-pointer"
                                             src="https://camo.githubusercontent.com/92ec9eb7eeab7db4f5919e3205918918c42e6772562afb4112a2909c1aaaa875/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313630373535343338352f7265706f7369746f726965732f6e6578742d6a732f6e6578742d6c6f676f2e706e67"
                                             alt="Next.js"
                                             width={30}
                                             height={30}
                                         />
                                         <img
-                                            className="h-16 w-16 mx-4"
+                                            className="h-16 w-16 mx-4 cursor-pointer"
                                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
                                             alt="TypeScript"
                                             width={30}
                                             height={30}
                                         />
                                         <img
-                                            className="h-16 w-16 mx-4"
+                                            className="h-16 w-16 mx-4 cursor-pointer"
                                             src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
                                             alt="Redux"
                                             width={30}
                                             height={30}
                                         />
                                         <img
-                                            className="h-16 w-16 mx-4"
+                                            className="h-[3.8rem] w-20 mx-4 cursor-pointer"
+                                            src="https://raw.githubusercontent.com/redux-saga/redux-saga/master/logo/0800/Redux-Saga-Logo.png"
+                                            alt="Redux Saga"
+                                            width={30}
+                                            height={30}
+                                        />
+                                        <img
+                                            className="h-16 w-16 mx-4 cursor-pointer"
                                             src="https://www.chartjs.org/media/logo-title.svg"
                                             alt="chartjs"
                                             width={30}
+                                            height={30}
+                                        />
+                                        <img
+                                            className="h-16 w-16 mx-4 cursor-pointer"
+                                            src="https://raw.githubusercontent.com/mbrn/material-table.com/master/docs/assets/logo-back.png"
+                                            alt="Material Table"
+                                            width={35}
                                             height={30}
                                         />
                                     </Wrapper>
@@ -280,7 +301,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                                         rel="noreferrer"
                                     >
                                         <p className="py-4 px-10 text-[#ffffff]">Source Code</p>
-                                        <div className="flex items-center justify-center text-white bg-[#7a3b78] h-[42px] w-[40px]">
+                                        <div className="flex items-center justify-center text-white  h-[42px] w-[40px]">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 role="img"
@@ -309,7 +330,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                                         rel="noreferrer"
                                     >
                                         <p className="py-4 px-10 text-[#ffffff]">Live Preview</p>
-                                        <span className="flex items-center justify-center text-white bg-[#7a3b78] h-[42px] w-[40px]">
+                                        <div className="flex items-center justify-center text-white  h-[42px] w-[40px]">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 role="img"
@@ -327,7 +348,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                                                 <polyline points="15 3 21 3 21 9"></polyline>
                                                 <line x1="10" y1="14" x2="21" y2="3"></line>
                                             </svg>
-                                        </span>
+                                        </div>
                                     </a>
                                 </Wrapper>
                             </Wrapper>
