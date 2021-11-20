@@ -51,9 +51,10 @@
             -webkit-mask-image: -webkit-radial-gradient(white, black);
             background: var(--background);
             background: #df006b;
-            background: #e73434;
             background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
             background: #e52165;
+            background: #e73434;
+            background: rgba(255, 65, 84, 1);
             background: var(--c-main);
             border-radius: 8px;
             box-shadow: 0 2px 8px -1px var(--shadow);
@@ -67,6 +68,7 @@
                 background: hsl(0deg, 65%, 47%);
                 background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
                 background: #c91c59;
+                background: rgb(230, 56, 73);
                 background: var(--c-main-dark);
 
                 margin: 0;
@@ -126,6 +128,7 @@
             -webkit-mask-image: -webkit-radial-gradient(white, black);
 
             @apply bg-[#8d448b];
+            background-color: var(--c-main);
             border-radius: 8px;
             box-shadow: 0 2px 8px -1px var(--shadow);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -135,7 +138,7 @@
                 height: 42px;
 
                 background-color: #7a3b78;
-
+                background-color: var(--c-main-dark);
                 & > svg {
                     max-width: 25px;
                     max-height: 25px;

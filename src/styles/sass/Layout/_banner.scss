@@ -135,6 +135,11 @@
             .banner-contact {
                 .btn-contact {
                     border: none;
+                    background-color: var(--c-main);
+
+                    & > div {
+                        background-color: var(--c-main-dark);
+                    }
                 }
             }
             .banner-cv,
