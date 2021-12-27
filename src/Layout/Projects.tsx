@@ -22,7 +22,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                 {/* //- Projects Body */}
                 <Wrapper class="projects-body flex flex-col	 gap-[3rem]">
                     {/* //- Projects One */}
-                    <Wrapper class="project-one flex content-start flex-col lgm:flex-row pt-[100px] pb-[50px] lgm:py-[100px]">
+                    <Wrapper class="project-0 flex content-start flex-col lgm:flex-row pt-[10rem] pb-[5rem] lgm:py-[10rem]">
                         {/* //- left */}
                         <Wrapper class="project-left flex-1 flex flex-col gap-20">
                             <Wrapper class="lgm:pr-20 pt-12" animation="fade-up">
@@ -37,8 +37,10 @@ const projects: React.FC<projectsProps> = ({}) => {
 
                                 {/* //---------------------------------------- */}
                                 {/* //- Projects Text Info */}
-                                <Wrapper class="py-8" id="animate-anchor" animation="fade-up">
-                                    <h2 className="text-4xl lgm:text-3xl">Techs and tools used</h2>
+                                <Wrapper class="py-8" id="animate-anchor-1" animation="fade-up">
+                                    <h2 className="text-4xl text-gray-600 lgm:text-3xl">
+                                        Techs and tools used
+                                    </h2>
                                     <Wrapper class="flex items-center justify-center lgm:justify-start pt-8">
                                         <a
                                             className="h-16 w-16 mr-4"
@@ -148,7 +150,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                             <Wrapper
                                 class="w-100 flex justify-center lgm:justify-start"
                                 animation="fade-up"
-                                anchor="#animate-anchor"
+                                anchor="#animate-anchor-1"
                             >
                                 {/* //---------------------------------------- */}
                                 {/* //- Show Code button */}
@@ -242,7 +244,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                     </Wrapper>
                     {/*//* ---------------------------------------------------------------- */}
                     {/* //- Projects Two */}
-                    <Wrapper class="project-two flex content-start flex-col lgm:flex-row pt-[5rem]">
+                    <Wrapper class="project-1 flex content-start flex-col lgm:flex-row py-[5rem]">
                         {/* //---------------------------------------- */}
                         {/* //- Project left */}
                         <Wrapper class="project-left flex-1 ">
@@ -280,7 +282,9 @@ const projects: React.FC<projectsProps> = ({}) => {
                                     </p>
                                 </Wrapper>
                                 <Wrapper class="py-8" animation="fade-up">
-                                    <h2 className="text-4xl lgm:text-3xl">Techs and tools used</h2>
+                                    <h2 className="text-4xl text-gray-600 lgm:text-3xl">
+                                        Techs and tools used
+                                    </h2>
                                     <Wrapper class="flex items-center justify-center lgm:justify-start pt-8 ">
                                         <a
                                             className="h-16 w-16 mr-4"
@@ -453,6 +457,215 @@ const projects: React.FC<projectsProps> = ({}) => {
                                         </div>
                                     </a>
                                 </Wrapper>
+                            </Wrapper>
+                        </Wrapper>
+                    </Wrapper>
+                    {/* //- Project three */}
+                    <Wrapper class="project-0  flex content-start flex-col lgm:flex-row pt-[5rem] pb-[2rem] lgm:pt-[10rem] lgm:pb-[6rem]">
+                        {/* //- left */}
+                        <Wrapper class="project-left flex-1 flex flex-col gap-20">
+                            <Wrapper class="lgm:pr-20 pt-12" animation="fade-up">
+                                <Wrapper class="pb-4">
+                                    <Wrapper class="text-5xl lgm:text-4xl flex flex-col	 lgm:flex-row align-center lgm:justify-between">
+                                        <h1>Full stack web app</h1>
+                                        <span className="text-3xl lgm:text-2xl w-[fit-content] rounded-lg text-[#28c76f] bg-[#28c76f1f] font-semibold py-1 px-4 my-4 lgm:my-0">
+                                            Coming Soon
+                                        </span>
+                                    </Wrapper>
+                                    <p className="text-[1.75rem] py-4 lgm:font-light tracking-wide	">
+                                        This is an upcoming project using MERN stack, MongoDB with
+                                        Mongoose, Express, React or Next.js, Node.js, with
+                                        authentication, name is not specified for now!
+                                    </p>
+                                </Wrapper>
+
+                                {/* //---------------------------------------- */}
+                                {/* //- Projects Text Info */}
+                                <Wrapper class="py-8" id="animate-anchor-2" animation="fade-up">
+                                    <h2 className="text-4xl text-gray-600 lgm:text-3xl">
+                                        Main techs and tools that will be used
+                                    </h2>
+                                    <Wrapper class="flex items-center justify-center lgm:justify-start pt-8">
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://sass-lang.com/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
+                                                alt="sass"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://tailwindcss.com/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                                                alt="TailwindCss"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://www.mongodb.com/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
+                                                alt="MongoDB"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://expressjs.com/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                                                alt="Express"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mx-4 "
+                                            href="https://nextjs.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="w-100 h-100"
+                                                src="https://camo.githubusercontent.com/92ec9eb7eeab7db4f5919e3205918918c42e6772562afb4112a2909c1aaaa875/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313630373535343338352f7265706f7369746f726965732f6e6578742d6a732f6e6578742d6c6f676f2e706e67"
+                                                alt="Next.js"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mr-4"
+                                            href="https://nodejs.dev/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                                                alt="Node.js"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                    </Wrapper>
+                                </Wrapper>
+                            </Wrapper>
+
+                            {/* //---------------------------------------- */}
+                            {/* //- Projects Buttons */}
+                            <Wrapper
+                                class="w-100 flex justify-center lgm:justify-start"
+                                animation="fade-up"
+                                anchor="#animate-anchor-2"
+                            >
+                                {/* //---------------------------------------- */}
+                                {/* //- Show Code button */}
+                                <Wrapper class="project-code-btn">
+                                    <a
+                                        className="btn-live flex items-center  rounded-md"
+                                        href=""
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <p className="py-4 px-10 text-[#ffffff]">Source Code</p>
+                                        <div className="flex items-center justify-center text-white  h-[42px] w-[40px]">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                role="img"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                width={25}
+                                                height={25}
+                                            >
+                                                <title>GitHub</title>
+                                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </Wrapper>
+
+                                {/* //---------------------------------------- */}
+                                {/* //- Live Button */}
+                                <Wrapper class="project-live-btn ml-12">
+                                    <a
+                                        className="btn-live flex items-center  rounded-md"
+                                        href=""
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <p className="py-4 px-10 text-[#ffffff]">Live Preview</p>
+                                        <div className="flex items-center justify-center text-white  h-[42px] w-[40px]">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                role="img"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                width={25}
+                                                height={25}
+                                            >
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </Wrapper>
+                            </Wrapper>
+                        </Wrapper>
+
+                        {/* //---------------------------------------- */}
+                        {/* //- Project Right */}
+                        <Wrapper
+                            class="project-right flex-1"
+                            id="project-right"
+                            animation="fade-up"
+                        >
+                            <Wrapper
+                                class="project-image rounded-lg overflow-hidden shadow-d"
+                                animation="fade-up"
+                                // anchor="#animate-anchor"
+                            >
+                                <Image
+                                    className="project-img h-100"
+                                    src="/images/projects/mern.jpg"
+                                    alt="project image"
+                                    width={1820}
+                                    height={940}
+                                    unoptimized={true}
+                                    quality={100}
+                                />
                             </Wrapper>
                         </Wrapper>
                     </Wrapper>

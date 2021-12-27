@@ -14,7 +14,8 @@
             }
         }
         .project-image {
-            & > div {
+            & > div,
+            & > span {
                 display: block !important;
             }
         }
@@ -25,7 +26,7 @@
             display: flex;
             top: 0;
         }
-        .project-one {
+        .project-0 {
             .project-image {
                 margin-right: -23rem;
 
@@ -47,7 +48,7 @@
             .project-right {
             }
         }
-        .project-two {
+        .project-1 {
             .project-image {
                 margin-left: -23rem;
                 @include mqp-2(1300px, 1700px) {
