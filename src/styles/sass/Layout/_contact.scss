@@ -11,7 +11,14 @@
             //     padding: 1rem;
             //     width: 100%;
             // }
-
+            .send-message {
+                transition: all 0.3s ease;
+                &:hover {
+                    border-radius: 8px;
+                    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+                    transform: translateY(-2px);
+                }
+            }
             .input {
                 // padding: 0.6rem;
                 box-sizing: border-box;

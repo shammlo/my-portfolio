@@ -29,7 +29,9 @@
             border-radius: 8px;
         }
 
-        &-contact.active {
+        &-contact.active,
+        &-contact:active,
+        &-contact:visited {
             @apply bg-[#8d448b] text-white;
             max-height: 4.2rem;
         }
@@ -112,7 +114,8 @@
                 }
             }
         }
-        &-live {
+        &-live,
+        &-send {
             --background: #275efe;
             --rectangle: #184fee;
             --success: #4672f1;
