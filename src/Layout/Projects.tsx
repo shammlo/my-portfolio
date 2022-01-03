@@ -466,7 +466,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                         <Wrapper class="project-left flex-1 flex flex-col gap-20">
                             <Wrapper class="lgm:pr-20 pt-12" animation="fade-up">
                                 <Wrapper class="pb-4">
-                                    <Wrapper class="text-5xl lgm:text-4xl flex flex-col	 lgm:flex-row align-center lgm:justify-between">
+                                    <Wrapper class="text-5xl lgm:text-4xl flex flex-col	 lgm:flex-row items-center lgm:justify-between">
                                         <h1>Full stack web app</h1>
                                         <span className="text-3xl lgm:text-2xl w-[fit-content] rounded-lg text-[#28c76f] bg-[#28c76f1f] font-semibold py-1 px-4 my-4 lgm:my-0">
                                             Coming Soon
