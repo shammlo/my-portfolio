@@ -29,11 +29,10 @@ const Header: React.FC<HeaderProps> = ({ isMobile, drawerHandler }) => {
             }`}
         >
             <Wrapper class="container">
-                <Wrapper class="flex justify-between flex-wrap">
+                <Wrapper class="flex justify-between items-center">
                     <Wrapper class="logo  h-100 cursor-pointer">
                         <Link to="home" className="logo-link flex items-center">
                             <Wrapper class="logo-link-image h-16 mr-3 flex items-center">
-                                {/* <Image src="/images/logo.svg" alt="main logo" width={40} height={40} /> */}
                                 <Image src="/images/s.png" alt="Main Logo" height={40} width={40} />
                             </Wrapper>
                             <span className="text-4xl tracking-wider font-bold uppercase">

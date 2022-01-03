@@ -28,7 +28,14 @@
     stroke-linejoin: round;
 }
 
-.app .header .mobile-menu {
-    max-width: 2.8rem;
-    max-height: 3.2rem;
+.app .header {
+    .mobile-menu {
+        max-width: 3.2rem;
+        max-height: 3.2rem;
+    }
+
+    .logo .logo-link-image {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
 }
