@@ -33,9 +33,14 @@
         max-width: 3.2rem;
         max-height: 3.2rem;
     }
+}
 
-    .logo .logo-link-image {
-        max-width: 4rem;
-        max-height: 4rem;
+.app {
+    .header,
+    .drawer {
+        .logo .logo-link-image {
+            max-width: 4rem;
+            max-height: 4rem;
+        }
     }
 }
