@@ -15,7 +15,7 @@ const projects: React.FC<projectsProps> = ({}) => {
                 <Wrapper class="projects-header text-center" animation="fade-up">
                     <h1 className="text-7xl lgm:text-6xl text-[#02073e]">My Projects</h1>
                     <h2 className="text-3xl my-4  lgm:font-light">
-                        Here are a few design projects I&apos;m worked on recently!
+                        Here are a few projects I worked on recently!
                     </h2>
                 </Wrapper>
                 {/* //---------------------------------------- */}
