@@ -8,7 +8,6 @@ interface BackDropProps {
 }
 
 const BackDrop: React.FC<BackDropProps> = ({ show, clicked }) => {
-    console.log(show);
     // useEffect(() => {
     //     if (show) {
     //         document.body.style.overflow = 'hidden';
