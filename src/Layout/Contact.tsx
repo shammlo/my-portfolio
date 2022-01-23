@@ -1,11 +1,9 @@
 //********** IMPORTS ************* */
 import React, { useEffect, useRef, useState } from 'react';
 import Wrapper from '../helpers/Hoc/Wrapper/Wrapper';
-import emailjs from 'emailjs-com';
-import { init } from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import Image from 'next/image';
 import Modal from '../components/UI/Modal';
-init('user_ZvmIDRZKN0Dpu9EnexPlA');
 //******************************** */
 
 interface ContactProps {}
@@ -16,31 +14,28 @@ const Contact: React.FC<ContactProps> = ({}) => {
         message: '',
         reply_to: '',
     });
+
     const [checking, setChecking] = useState(false);
     const form: any = useRef();
     let submittingCheck = null;
     const onSubmit = (e: any) => {
         e.preventDefault();
-        emailjs
-            .sendForm(
-                'service_29al46l',
-                'template_lpc48he',
-                form.current,
-                'user_ZvmIDRZKN0Dpu9EnexPlA'
-            )
-            .then(
-                (result) => {
-                    // setToSend({
-                    //     from_name: '',
-                    //     message: '',
-                    //     reply_to: '',
-                    // });
-                    setChecking(true);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
+        const server = process.env.emailjs_server as string;
+        const template = process.env.emailjs_template as string;
+        const userId = process.env.emailjs_user as string;
+        emailjs.sendForm(server, template, form.current, userId).then(
+            (result) => {
+                // setToSend({
+                //     from_name: '',
+                //     message: '',
+                //     reply_to: '',
+                // });
+                setChecking(true);
+            },
+            (error) => {
+                console.log(error.text);
+            }
+        );
     };
 
     const handleChange = (e: any) => {
@@ -49,9 +44,6 @@ const Contact: React.FC<ContactProps> = ({}) => {
     const checkingHandler = () => {
         setChecking(() => !checking);
     };
-    useEffect(() => {
-        console.log(checking);
-    }, [checking]);
 
     return (
         <>
