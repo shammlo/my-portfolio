@@ -58,7 +58,7 @@ const Layout: React.FC<LayoutProps> = (props) => {
     const drawerHandler = () => {
         setMobileDrawer(!mobileDrawer);
     };
-    // console.log(mobileDrawer);
+
     return (
         <Wrapper class={`app layout ${isMobile ? 'mobile' : 'large-screen'}`}>
             {/* Top navigation */}
@@ -72,21 +72,3 @@ const Layout: React.FC<LayoutProps> = (props) => {
 };
 
 export default Layout;
-
-export async function getServerSideProps(data: any) {
-    // console.log(data);
-    return {
-        props: {
-            user: data.user,
-        },
-    };
-}
-export function getStaticProps() {
-    return {
-        // returns a redirect to an internal page `/another-page`
-        redirect: {
-            destination: '/',
-            permanent: false,
-        },
-    };
-}
