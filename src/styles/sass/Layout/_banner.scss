@@ -1,10 +1,10 @@
 .app .main .cta-banner.banner {
     overflow: hidden;
-    background-color: #f6f8fb;
+    background-color: var(--bg-secondary);
     color: var(--t-c-primary);
     .banner-right {
         position: relative;
-        background-color: #f6f8fb;
+        background-color: var(--bg-secondary);
         color: inherit;
         // animation: 1s ease-out 0s 1 slide-right;
 
@@ -15,7 +15,7 @@
         &-wrapper {
             margin-top: -2rem;
             margin-right: -23rem;
-            background-color: #f6f8fb;
+            background-color: var(--bg-secondary);
             color: inherit;
             @include media-max($bp-1100) {
                 margin-right: 0rem;
@@ -35,7 +35,7 @@
             img {
                 mix-blend-mode: darken !important;
                 // background-blend-mode: darken ;
-                background-color: #f6f8fb;
+                background-color: var(--bg-secondary);
             }
             .banner-img {
                 max-width: none;
@@ -75,9 +75,9 @@
 
                     &:before {
                         content: '';
-                        background-color: #df006b;
-                        background-color: #f93838;
                         background-color: #ff4154;
+                        //         background-color: var(--c-main);
+
                         width: 0rem;
                         height: 0em;
                         position: absolute;
@@ -187,33 +187,34 @@
     background-color: #fff;
     color: inherit;
 }
-.app .c-name {
-    position: relative;
-    transition: all 0.3s;
+// .app .c-name {
+//     position: relative;
+//     transition: all 0.3s;
 
-    &:before {
-        content: '';
-        background-color: #df006b;
-        background-color: #f93838;
-        background-color: #ff4154;
-        width: 0rem;
-        height: 0em;
-        position: absolute;
-        z-index: -1;
-        filter: url(#marker-shape);
-        left: 1rem;
-        top: 0.1em;
-        padding: 0 0.25em;
-        animation: c-highlight 650ms ease-out;
-        animation-iteration-count: 1;
-        animation-delay: 1400ms;
-        animation-fill-mode: forwards;
-    }
+//     &:before {
+//         content: '';
+//         // background-color: #df006b;
+//         // background-color: #f93838;
+//         // background-color: #ff4154;
+//         background-color: var(--c-main);
+//         width: 0rem;
+//         height: 0em;
+//         position: absolute;
+//         z-index: -1;
+//         filter: url(#marker-shape);
+//         left: 1rem;
+//         top: 0.1em;
+//         padding: 0 0.25em;
+//         animation: c-highlight 650ms ease-out;
+//         animation-iteration-count: 1;
+//         animation-delay: 1400ms;
+//         animation-fill-mode: forwards;
+//     }
 
-    // &:hover {
-    //     color: #fff;
-    //     &:before {
-    //         background-color: #f93838;
-    //     }
-    // }
-}
+//     // &:hover {
+//     //     color: #fff;
+//     //     &:before {
+//     //         background-color: #f93838;
+//     //     }
+//     // }
+// }

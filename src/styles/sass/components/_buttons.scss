@@ -9,20 +9,16 @@
         &-contact {
             transition: all 0.3s;
             //- pink
-            @apply border-solid border-2 text-[#e73434];
-            border-color: #7367f0;
-            color: #7367f0;
+            // @apply border-solid border-2 text-[#e73434];
+            // border-color: #7367f0;
+            // color: #7367f0;
 
-            // - red
-            @apply border-[#ff4154] border-solid border-2 text-[#ff4154];
-            @apply hover:bg-[#ff4154] hover:text-white;
+            // // - red
+            // @apply border-[#ff4154] border-solid border-2 text-[#ff4154];
+            // @apply hover:bg-[#ff4154] hover:text-white;
             // - purple
             @apply border-[#8d448b] border-solid border-2 text-[#8d448b];
             @apply hover:bg-[#8d448b] hover:text-white;
-
-            // &:hover {
-            //     background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
-            // }
             max-height: 4.2rem;
             cursor: pointer;
             overflow: hidden;
@@ -36,12 +32,6 @@
             max-height: 4.2rem;
         }
         &-download {
-            --background: #275efe;
-            --rectangle: #184fee;
-            --success: #4672f1;
-            --text: #fff;
-            --arrow: #fff;
-            --checkmark: #fff;
             --shadow: rgba(10, 22, 50, 0.24);
             --duration: 3000;
             max-height: 4.2rem;
@@ -51,12 +41,7 @@
             overflow: hidden;
             text-decoration: none;
             -webkit-mask-image: -webkit-radial-gradient(white, black);
-            background: var(--background);
-            background: #df006b;
-            background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
-            background: #e52165;
-            background: #e73434;
-            background: rgba(255, 65, 84, 1);
+
             background: var(--c-main);
             border-radius: 8px;
             box-shadow: 0 2px 8px -1px var(--shadow);
@@ -65,12 +50,7 @@
                 position: relative;
                 width: 40px;
                 height: 42px;
-                background: var(--rectangle);
-                background: #b90055;
-                background: hsl(0deg, 65%, 47%);
-                background: linear-gradient(118deg, #7367f0, rgba(115, 103, 240, 0.7));
-                background: #c91c59;
-                background: rgb(230, 56, 73);
+
                 background: var(--c-main-dark);
 
                 margin: 0;
@@ -94,7 +74,7 @@
                     left: 50%;
                     height: 17px;
                     margin: -9px 0 0 -1px;
-                    background: var(--arrow);
+                    background: var(--t-c-main);
                 }
 
                 & svg {
@@ -108,7 +88,7 @@
                     fill: none;
                     z-index: 1;
                     stroke-width: 2px;
-                    stroke: var(--arrow);
+                    stroke: var(--t-c-main);
                     stroke-linecap: round;
                     stroke-linejoin: round;
                 }
@@ -116,12 +96,6 @@
         }
         &-live,
         &-send {
-            --background: #275efe;
-            --rectangle: #184fee;
-            --success: #4672f1;
-            --text: #fff;
-            --arrow: #fff;
-            --checkmark: #fff;
             --shadow: rgba(10, 22, 50, 0.24);
             --duration: 3000;
             max-height: 4.2rem;
