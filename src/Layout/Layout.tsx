@@ -55,15 +55,25 @@ const Layout: React.FC<LayoutProps> = (props) => {
         setIsMobile(window.innerWidth < 1025);
     };
 
-    const drawerHandler = () => {
+    const drawerHandler = (opt?: boolean) => {
         setMobileDrawer(!mobileDrawer);
     };
+
+    const contextObject = React.useMemo(
+        () => ({
+            isMobile,
+            drawerHandler,
+
+            mobileDrawer,
+        }),
+        [mobileDrawer]
+    );
 
     return (
         <Wrapper class={`app layout ${isMobile ? 'mobile' : 'large-screen'}`}>
             {/* Top navigation */}
             <Header isMobile={isMobile} drawerHandler={drawerHandler} />
-            <MobileLinksContext.Provider value={drawerHandler}>
+            <MobileLinksContext.Provider value={contextObject}>
                 <MobileDrawer drawerHandler={drawerHandler} mobileDrawer={mobileDrawer} />
             </MobileLinksContext.Provider>
             <main className="main main-wrapper">{props.children}</main>
