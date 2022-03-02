@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 interface MobileDrawerProps {
     mobileDrawer: boolean;
-    drawerHandler: () => void;
+    drawerHandler: (args?: boolean) => void;
 }
 
 const MobileDrawer: React.FC<MobileDrawerProps> = ({ mobileDrawer, drawerHandler }) => {
@@ -55,7 +55,7 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ mobileDrawer, drawerHandler
                             </svg>
                         </Wrapper>
                     </Wrapper>
-                    <Navigation classes="" />
+                    <Navigation classes="" drawerHandler={drawerHandler} isMobile />
                     <Wrapper class="nav-contact self-end w-100">
                         <Wrapper class="">
                             <Link
