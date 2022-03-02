@@ -1,6 +1,6 @@
 //********** IMPORTS ************* */
 import React, { useContext } from 'react';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import { Link } from 'react-scroll';
 import MobileLinksContext from '../../../../Context/MobileLinksContext';
 //******************************** */
@@ -11,16 +11,13 @@ interface NavigationItemsProps {
 }
 
 const NavigationItems: React.FC<NavigationItemsProps> = (props) => {
-    const router = useRouter();
-    const mobileDrawerHandler = useContext(MobileLinksContext);
-    const classes = ['navigation-item'];
+    const mobileContext = useContext(MobileLinksContext);
 
-    if (router.asPath === props.href) {
-        // console.log(router.push());
-        classes.push('active');
-    }
     return (
-        <li className="navigation-item flex items-center" onClick={() => mobileDrawerHandler()}>
+        <li
+            className="navigation-item flex items-center"
+            onClick={() => mobileContext.drawerHandler(false)}
+        >
             <Link
                 to={props.href}
                 className="navigation-link"
@@ -30,11 +27,10 @@ const NavigationItems: React.FC<NavigationItemsProps> = (props) => {
                 offset={-70}
                 duration={300}
             >
-                <div className="active-link"></div>
+                {!mobileContext.isMobile ? <div className="active-link"></div> : null}
                 {props.children}
             </Link>
-            {/* <NavLink href={props.href} className={classes.join(' ')}>{props.children}</NavLink> */}
         </li>
     );
 };
-export default NavigationItems;
+export default React.memo(NavigationItems);

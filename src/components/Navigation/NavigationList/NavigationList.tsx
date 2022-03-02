@@ -1,6 +1,9 @@
 //********** IMPORTS ************* */
 import React from 'react';
-import NavigationItem from './NavigationItem/NavigationItem';
+import dynamic from 'next/dynamic';
+const NavigationItem = dynamic(() => import('./NavigationItem/NavigationItem'));
+
+// import NavigationItem from './NavigationItem/NavigationItem';
 //******************************** */
 
 interface NavigationListProps {
@@ -22,4 +25,4 @@ const NavigationList: React.FC<NavigationListProps> = (props) => {
         </ul>
     );
 };
-export default NavigationList;
+export default React.memo(NavigationList);

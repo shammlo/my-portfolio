@@ -1,11 +1,13 @@
 //********** IMPORTS ************* */
 import React from 'react';
-import Wrapper from '../../helpers/Hoc/Wrapper/Wrapper';
-import NavigationList from './NavigationList/NavigationList';
+import dynamic from 'next/dynamic';
+const NavigationList = dynamic(() => import('./NavigationList/NavigationList'));
 //******************************** */
 
 interface NavigationProps {
     classes?: string;
+    drawerHandler?: () => void;
+    isMobile?: boolean;
 }
 
 const Navigation: React.FC<NavigationProps> = (props) => {
