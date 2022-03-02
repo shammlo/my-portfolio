@@ -1,6 +1,11 @@
 //* ********* IMPORTS **********/
 import React from 'react';
 //* ***********************************
-
-const MobileLinksContext = React.createContext(() => {});
+type Context = {
+    isMobile: boolean;
+    drawerHandler: (args?: boolean) => void;
+    close?: () => void;
+    mobileDrawer: boolean;
+};
+const MobileLinksContext = React.createContext<Context>({} as Context);
 export default MobileLinksContext;
