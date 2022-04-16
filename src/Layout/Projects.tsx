@@ -467,15 +467,16 @@ const projects: React.FC<projectsProps> = ({}) => {
                             <Wrapper class="lgm:pr-20 pt-12" animation="fade-up">
                                 <Wrapper class="pb-4">
                                     <Wrapper class="text-5xl lgm:text-4xl flex flex-col	 lgm:flex-row items-center lgm:justify-between">
-                                        <h1>Full stack web app</h1>
+                                        <h1>Instagram Clone</h1>
                                         <span className="text-3xl lgm:text-2xl w-[fit-content] rounded-lg text-[#28c76f] bg-[#28c76f1f] font-semibold py-1 px-4 my-4 lgm:my-0">
                                             Coming Soon
                                         </span>
                                     </Wrapper>
                                     <p className="text-[1.75rem] py-4 lgm:font-light tracking-wide	">
                                         This is an upcoming project using MERN stack, MongoDB with
-                                        Mongoose, Express, React or Next.js, Node.js, with
-                                        authentication, name is not specified for now!
+                                        Mongoose, Express, Next.js, Node.js, with authentication and
+                                        redux for state management, and file uploads, currently
+                                        under development.
                                     </p>
                                 </Wrapper>
 
@@ -566,6 +567,35 @@ const projects: React.FC<projectsProps> = ({}) => {
                                                 className="h-100 w-100"
                                                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
                                                 alt="Node.js"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+                                        <a
+                                            className="h-16 w-16 mx-4 "
+                                            href="https://redux.js.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                                                alt="Redux"
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </a>
+
+                                        <a
+                                            className="h-[3.8rem] w-20 mx-4 "
+                                            href="https://redux-saga.js.org/"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <img
+                                                className="h-100 w-100"
+                                                src="https://raw.githubusercontent.com/redux-saga/redux-saga/master/logo/0800/Redux-Saga-Logo.png"
+                                                alt="Redux Saga"
                                                 width={30}
                                                 height={30}
                                             />
