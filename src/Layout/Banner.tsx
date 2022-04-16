@@ -10,7 +10,7 @@ interface BannerProps {}
 
 const Banner: React.FC<BannerProps> = ({}) => {
     const downloadPDF = () => {
-        window.open('/files/Shamlo_Ameer.pdf', '_blank');
+        window.open('/files/Shamlo_Ameer_Resume.pdf', '_blank');
     };
     return (
         <section className="banner cta-banner" id="home">
@@ -48,10 +48,10 @@ const Banner: React.FC<BannerProps> = ({}) => {
                                     </defs>
                                 </svg>
                                 <strong className="c-name relative"> Shamlo</strong>, I&apos;m a
-                                Front End Developer!
+                                Full Stack Engineer!
                             </h1>
                             <h2 className="banner-text-subtitle mb-8 mt-4">
-                                A self-taught front-end developer and web designer based in
+                                A self-taught full-stack engineer and web designer based in
                                 Kurdistan.
                             </h2>
                         </Wrapper>
@@ -65,7 +65,7 @@ const Banner: React.FC<BannerProps> = ({}) => {
                             <Wrapper class="banner-cv max-h-[42px] max-w-[170px] mr-12">
                                 <a
                                     className="btn-download flex items-center"
-                                    href="/files/Shamlo_Ameer.pdf"
+                                    href="/files/Shamlo_Ameer_Resume.pdf"
                                     download
                                     target="_blank"
                                     onClick={() => downloadPDF()}
