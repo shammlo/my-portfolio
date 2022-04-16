@@ -35,17 +35,17 @@ const AboutMe: React.FC<AboutMeProps> = ({}) => {
                             </h2>
                             <hr className="c-line my-4 mx-auto lgm:mx-0"></hr>
                             <p className="text-3xl lgm:text-3xl text-[#3f3a5a] leading-normal overflow-ellipsis">
-                                Hello! My name is Shamlo Ameer, I’m a self taught junior web
-                                developer located in kurdistan, computer science graduate, I’m very
+                                Hello! My name is Shamlo Ameer, I’m a self taught full-stack
+                                engineer located in kurdistan, computer science graduate, I’m very
                                 passionate about learning new technologies and try new experiences,
                                 as hobbies i like to do meditation, reading books, going to gym, and
                                 walking.
                             </p>
                             <p className="text-3xl lgm:text-3xl text-[#3f3a5a] leading-normal overflow-ellipsis py-8">
                                 Now I design and develop using Next.js and TypeScript as my main
-                                languages, also I&apos;m currently learning Node.js, Express.js and
-                                after that MongoDB, SQL, MySQL since i want to be a full stack
-                                developer, and my main goal is to become a software engineer.
+                                languages for front-end and Node, Express, and MongoDB for back-end,
+                                right now im practicing more by creating MERN stack applications,
+                                personally and within my work area.
                             </p>
                             <p className="text-3xl lgm:text-3xl text-[#3f3a5a] leading-normal overflow-ellipsis ">
                                 I don’t like to define myself by the work I’ve done. I define myself
