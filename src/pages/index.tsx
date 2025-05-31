@@ -29,7 +29,6 @@ const Home: NextPage = () => {
                     height={40}
                     width={40}
                     layout="responsive"
-                    // layout="fill"
                     className="block h-12 md:h-16"
                   />
                 </Wrapper>
